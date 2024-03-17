@@ -59,7 +59,7 @@ model = genai.GenerativeModel('gemini-pro',
 @bot.event
 async def on_ready():
   print(f"Bot {bot.user.name} is ready!")
-  await bot.change_presence(activity=nextcord.Streaming(
+  await bot.change_presence(activity=discord.Streaming(
       name='Black Market!', url='https://www.twitch.tv/example_channel'))
 
 
